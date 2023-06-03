@@ -1,15 +1,14 @@
-import cors from "cors";
-import express, { Application, NextFunction, Request, Response } from "express";
+import cors from 'cors'
+import express, { Application, Request } from 'express'
 const app: Application = express()
-const port = 5000
 
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Testing
-app.get('/', (req: Request, res: Response, next: NextFunction) => {
-    res.send('Working Successfully')
+app.get('/', (req: Request, res: any) => {
+  res.send('Working Successfully')
 })
 
 export default app
