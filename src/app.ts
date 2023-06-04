@@ -7,8 +7,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Testing
-app.get('/', (req: Request, res: any) => {
-  res.send('Working Successfully Done')
+app.get('/', (req: Request, res: anay) => {
+  res.send('Working Smoothly')
 })
 
 export default app
